@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yashvi’s world</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f6;--ink:#1c2427;--soft:#5d6b70;--line:#d5dcdc;--accent:#1d5b66}
+@media (prefers-color-scheme:dark){:root{--bg:#141b1d;--ink:#e6ecec;--soft:#9aa9ad;--line:#2b383b;--accent:#7cc3cf}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:20px/1.7 "Newsreader",Georgia,serif}
+.wrap{max-width:38rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{margin-bottom:3rem}
+header a{text-decoration:none;color:var(--ink)}
+.site{font-size:2.4rem;font-weight:600;line-height:1.15;margin:0}
+.tag{color:var(--soft);margin:.5rem 0 0;font-style:italic}
+.item{display:block;padding:1.25rem 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.item:last-child{border-bottom:1px solid var(--line)}
+.item h2{margin:0;font-size:1.4rem;line-height:1.3}
+.item:hover h2{color:var(--accent)}
+.item small{color:var(--soft);font-size:.9rem}
+.item p{margin:.35rem 0 0;color:var(--soft);font-size:1rem;line-height:1.5}
+article h1{font-size:2.2rem;line-height:1.2;margin:0 0 .4rem}
+article .date{color:var(--soft);margin:0 0 2.5rem;font-size:.95rem}
+article p{margin:0 0 1.4rem}
+.back{display:inline-block;margin-bottom:2rem}
+footer{margin-top:4rem;color:var(--soft);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a href="#"><h1 class="site" id="siteName"></h1></a>
+  <p class="tag" id="tagline"></p>
+</header>
+<main id="app"></main>
+<footer id="foot"></footer>
+</div>
+
+<script>
+/* ============ EDIT THIS PART ============ */
+const SITE = {
+  name: "Yashvi’s world",
+  tagline: "Thoughts, written down."
+};
+
+/* To add another essay later, copy a whole { ... } block below and paste it
+   above the first one (newest first). Leave a blank line between paragraphs. */
+const ESSAYS = [
+  {
+    id: "beneath-the-skin",
+    title: "Beneath the Skin: Why We Must End Our Obsession with Color",
+    date: "22 November 2026",
+    summary: "A little boy asked me if he was ugly because of his skin. Why are we still judging people by color?",
+    text: `We live in the twenty-first century. We have mapped the human genome, sent machines to Mars, and connected billions of people in an instant. Yet in the midst of all this progress, we remain trapped in one of humanity’s oldest and most senseless habits: judging people by the color of their skin.
+
+I am involved with several NGOs that work on child development and women’s empowerment. A few days ago, I visited one of them and spent time talking with the children. One boy stood out, not because of anything he did, but because of what he didn’t do. He sat quietly in a corner, speaking to no one. I asked the other children and the management why he was so withdrawn, but nobody had an answer.
+
+So I went to him, introduced myself, and asked if we could be friends. He said nothing. Later I took him outside, away from the crowd, and gently asked about his life. After a long silence, he looked up at me and asked a question that still echoes in my mind: “Didi, am I black? Am I ugly?”
+
+I told him, “What are you saying, baby? You are beautiful. Look at you, you are so cute.” But he told me that everyone around him called him ugly. Even some of his own teachers, the people meant to protect and uplift him, called him “black man” and told him to stand up. It had become his nickname. A child who should have been laughing and playing had learned to sit in silence, believing something was wrong with the way he was born.
+
+I felt heartbroken. How can adults do this? Do they not understand what such words do to a child’s mind? He is just a little boy. Children do not come into the world with prejudice; they absorb it from the people around them. Every cruel nickname, every mocking laugh, and every careless comment becomes a brick in the wall of his self-image. A wound like this does not stay in childhood. It follows a person into adulthood as low confidence, self-doubt, and the belief that they are not good enough.
+
+And this is not an isolated story. I have seen many such incidents, and the pattern extends far beyond that NGO. It runs through our everyday lives. When we choose whom to befriend, we first look at appearance. When we think of dating, we want a partner with fair skin. When we think of marriage, we demand that the bride be “beautiful” and the groom “handsome,” and we define those words by shades of color. Society has quietly convinced us that if we do not look a certain way, we cannot succeed, be loved, or even be respected. As a result, countless people live with low self-esteem, not because they lack talent or kindness, but because they have been taught to see their own skin as a flaw.
+
+So I ask: why are we still doing this? Why have we not done more to stop it?
+
+The answer is uncomfortable. We have not stopped because we have normalized it. We laugh at the joke, ignore the nickname, and repeat the “compliment” that someone looks better when fair. Prejudice survives not only through hatred but through habit and silence. If we want it to end, it has to start with us.
+
+We can begin with small, real steps:
+
+Challenge it at home and in schools. Teachers and parents must never use a child’s skin color as a joke or a nickname. Words from an elder carry enormous weight in a young mind.
+
+Teach children their worth early. Let them hear that kindness, curiosity, courage, and effort are what define a person, not complexion.
+
+Speak up. When we hear a colorist remark, we should not stay quiet. Silence feels like agreement.
+
+Change our own standards. Whether in friendship, love, or marriage, we should look for character, values, and respect before appearance.
+
+Skin color is nothing more than pigment, a product of geography and genetics. It says nothing about intelligence, goodness, ability, or worth. A person’s qualities, such as their honesty, compassion, skills, and integrity, are what truly define them.
+
+Let us stop racism and colorism, and let us start now. Let us judge people by their character, not their color, and treat everyone with equal respect and dignity. If we do, then maybe the next time a child like that little boy is asked who he is, he will not hang his head and ask whether he is ugly. He will smile and say, “I am me, and I am enough.”`
+  }
+];
+/* ========================================= */
+
+const app = document.getElementById("app");
+document.getElementById("siteName").textContent = SITE.name;
+document.getElementById("tagline").textContent = SITE.tagline;
+document.getElementById("foot").textContent = "© " + new Date().getFullYear() + " " + SITE.name;
+
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function render(){
+  const id = location.hash.slice(1);
+  const essay = ESSAYS.find(e => e.id === id);
+  if (essay){
+    document.title = essay.title + " | " + SITE.name;
+    app.innerHTML = '<a class="back" href="#">Back to all essays</a><article><h1>' + esc(essay.title) +
+      '</h1><p class="date">' + esc(essay.date) + '</p>' +
+      essay.text.split(/\n\s*\n/).map(p => "<p>" + esc(p.trim()) + "</p>").join("") + "</article>";
+  } else {
+    document.title = SITE.name;
+    app.innerHTML = ESSAYS.map(e =>
+      '<a class="item" href="#' + e.id + '"><h2>' + esc(e.title) + '</h2><small>' + esc(e.date) +
+      '</small><p>' + esc(e.summary) + '</p></a>').join("");
+  }
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", render);
+render();
+</script>
+</body>
+</html>
